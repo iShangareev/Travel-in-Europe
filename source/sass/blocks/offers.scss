@@ -1,0 +1,12 @@
+.offers {
+  background-image: url("../img/cards-bg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 1444px;
+}
+
+@media (max-width: 1023px) {
+  .offers {
+    background-image: url("");
+  }
+}

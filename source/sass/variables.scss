@@ -1,0 +1,44 @@
+// colors
+
+// * {
+//   border: solid 1px red;
+// }
+
+:root {
+  --basic-black: #000000;
+  --light-blue: #1d2e5b;
+  --main-blue: #182044;
+  --main-blue-text: #192144;
+  --main-blue-title: #161c35;
+  --basic-white: #ffffff;
+  --basic-grey: #edeff6;
+  --basic-grey-dark: #e5e5e5;
+  --basic-yellow: #ffd74b;
+  --basic-link: #132576;
+  --special-orange: #ff8d30;
+  --special-orange-2: #ffa530;
+  --special-yellow-dark: #ffbd30;
+  --special-blue: #dfe3f0;
+  --special-grey: #444444;
+  --hashtag-color: #b3b3b3;
+  --lilac: #d4d9eb;
+  --lilac-light: #e2e5f2;
+  --lilac-blue: #d6daed;
+  --normal-orange: #ff5c23;
+  --special-choose: #dfe3f0;
+  --special-card: #eceff6;
+  --grey-border: #cbced9;
+  --grey-special-border: #f3c72b;
+  --special-pink: #f9eaea;
+  --special-red: #f97676;
+}
+
+// settings
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}

@@ -1,0 +1,222 @@
+.country-card {
+  display: none;
+  align-items: flex-end;
+  position: relative;
+}
+
+.country-card--active {
+  display: flex;
+}
+
+.country-card__info {
+  box-sizing: border-box;
+  max-width: 425px;
+  text-align: left;
+  margin-right: 45px;
+  padding-right: 60px;
+}
+
+.country-card__info-title {
+  position: relative;
+  margin-bottom: 50px;
+  font-size: 55px;
+  line-height: 90px;
+  letter-spacing: -1px;
+  color: #2c2e3f;
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -20px;
+    width: 175px;
+    height: 4px;
+    background-color: #fe7865;
+  }
+}
+
+.country-card__info-text {
+  margin-bottom: 50px;
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: -0.5px;
+  color: rgba(44, 46, 63, 0.7);
+}
+
+.country-card__info-link {
+  position: relative;
+  box-sizing: border-box;
+  display: block;
+  width: 250px;
+  padding: 30px 39px;
+  margin-bottom: 15px;
+  background-color: #fe7865;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  color: #ffffff;
+  text-decoration: none;
+  text-align: left;
+  letter-spacing: 3px;
+}
+
+.country-card__pic {
+  object-fit: cover;
+}
+
+.country-card__review {
+  max-width: 382px;
+  box-sizing: border-box;
+  position: absolute;
+  padding: 30px;
+  right: 0;
+  top: 160px;
+  background-color: #ffffff;
+}
+
+.country-card__review-title {
+  position: relative;
+  margin-top: 0;
+  margin-bottom: 35px;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 37px;
+  color: #2c2e3f;
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -15px;
+    width: 70px;
+    height: 1px;
+    background-color: #fe7865;
+  }
+}
+
+.country-card__review-text {
+  font-size: 14px;
+  line-height: 28px;
+  letter-spacing: -0.5px;
+  color: rgba(44, 46, 63, 0.7);
+}
+
+.country-card__review-author {
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.country-card__review-author-name {
+  display: inline-block;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 40px;
+  letter-spacing: -0.5px;
+  color: #2c2e3f;
+}
+
+.country-card__review-author-avatar {
+  margin-right: 13px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+@media (max-width: 1023px) {
+  .country-card {
+    flex-direction: column;
+  }
+
+  .country-card__info {
+    max-width: 95%;
+    padding-right: 0;
+    margin: 0 auto 32px;
+    text-align: center;
+  }
+
+  .country-card__info-title {
+    margin-top: 5px;
+    margin-bottom: 0;
+    font-size: 30px;
+    &::after {
+      display: none;
+    }
+  }
+
+  .country-card__info-text {
+    margin-top: 0;
+    margin-bottom: 15px;
+  }
+
+  .country-card__pic {
+    width: 100%;
+    max-height: 415px;
+  }
+
+  .country-card__review {
+    left: 50%;
+    transform: translate(-50%);
+    top: auto;
+    bottom: -35px;
+  }
+
+  .country-card__info-link {
+    padding: 17px 50px;
+    margin: auto;
+    font-weight: 500;
+    letter-spacing: 2px;
+  }
+}
+
+@media (max-width: 767px) {
+  .country-card__info {
+    margin-bottom: 50px;
+  }
+
+  .country-card__info-title {
+    margin-top: -5px;
+    font-size: 24px;
+  }
+
+  .country-card__info-text {
+    max-width: 95%;
+    margin: 0 auto 21px;
+    margin-top: -10px;
+  }
+
+  .country-card__info-link {
+    width: 286px;
+  }
+
+  .country-card__review {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 15px;
+    min-width: 268px;
+    bottom: -56px;
+  }
+
+  .country-card__review-title {
+    line-height: 20px;
+    font-size: 20px;
+    text-align: center;
+    &::after {
+      bottom: -16px;
+      left: 50%;
+      transform: translate(-50%);
+    }
+  }
+
+  .country-card__review-text {
+    max-width: 98%;
+    padding-bottom: 0px;
+    text-align: center;
+  }
+
+  .country-card__review-author {
+    margin-top: 0px;
+    flex-direction: column;
+  }
+
+  .country-card__review-author-avatar {
+    margin-right: 0;
+  }
+}

@@ -1,0 +1,128 @@
+.hero {
+  position: relative;
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+.hero__pic {
+  width: 100%;
+  height: auto;
+  min-height: 235px;
+}
+
+.hero__content {
+  max-width: 345px;
+  position: absolute;
+  top: 17%;
+  right: 26%;
+  color: #ffffff;
+}
+
+.hero__title {
+  margin-bottom: 32px;
+  font-weight: 600;
+  font-size: 55px;
+  line-height: 80px;
+  letter-spacing: -1px;
+}
+
+.hero__text {
+  margin-bottom: 36px;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: -0.5px;
+}
+
+.hero__link {
+  position: relative;
+  box-sizing: border-box;
+  display: block;
+  width: 340px;
+  padding: 30px 39px;
+  background-color: #fe7865;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  color: #ffffff;
+  text-decoration: none;
+  text-align: left;
+  letter-spacing: 3px;
+  &::after {
+    content: "";
+    position: absolute;
+    width: 14px;
+    height: 17px;
+    background-image: url("../img/arrow-right.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    right: 44px;
+  }
+}
+
+@media (max-width: 1280px) {
+  .hero__content {
+    top: 5%;
+  }
+}
+
+@media (max-width: 1023px) {
+  .hero__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 420px;
+    top: 13.5%;
+    right: 22.5%;
+  }
+
+  .hero__title {
+    margin-bottom: 8px;
+    font-size: 30px;
+    line-height: 30px;
+    letter-spacing: -0.3px;
+  }
+
+  .hero__text {
+    margin-bottom: 11px;
+    font-size: 16px;
+    line-height: 25px;
+    text-align: center;
+  }
+
+  .hero__link {
+    width: 250px;
+    padding: 17px 39px;
+    font-size: 10px;
+    top: 2px;
+    left: 4px;
+    &::after {
+      right: 39px;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .hero__content {
+    max-width: 94%;
+    top: 29.5%;
+    right: 2%;
+  }
+
+  .hero__title {
+    margin-bottom: 31%;
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .hero__text {
+    margin-bottom: 20px;
+    color: #2c2e3f;
+    line-height: 27px;
+  }
+
+  .hero__link {
+    width: 291px;
+    padding: 15px 39px;
+    left: 0;
+  }
+}

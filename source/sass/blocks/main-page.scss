@@ -1,0 +1,92 @@
+.main-page {
+  font-family: "Montserrat", sans-serif, Arial, sans-serif;
+}
+
+.main-page__header {
+  width: 100%;
+}
+
+.main-page__header-content {
+  max-width: 1170px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 23px;
+  padding-bottom: 18px;
+  margin: 0 auto;
+}
+
+.main-page__nav {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.main-page__nav-list {
+  display: flex;
+  align-items: center;
+  padding-left: 0;
+  margin-right: 13px;
+  list-style-type: none;
+}
+
+.main-page__nav-list-item {
+  &:not(:last-child) {
+    margin-right: 36px;
+    letter-spacing: 0.1px;
+  }
+  &:last-child .main-page__nav-link {
+    margin-left: 20px;
+    font-weight: 400;
+    font-size: 18px;
+    text-decoration: underline;
+  }
+}
+
+.main-page__nav-link {
+  display: flex;
+  align-items: center;
+  color: #141517;
+  text-decoration: none;
+  &:hover {
+    color: #fe7865;
+  }
+}
+
+.main-page__nav-link-pic {
+  margin-right: 10px;
+}
+
+.menu-button {
+  display: none;
+}
+
+.main-page__travel-places {
+  margin-top: 199px;
+}
+
+@media (max-width: 1200px) {
+  .main-page__header-content {
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 1023px) {
+  .main-page__travel-places {
+    margin-top: 60px;
+  }
+
+  .main-page__header-content {
+    max-width: 94%;
+    padding-top: 18px;
+    padding-bottom: 10px;
+  }
+
+  .main-page__header-logo-pic {
+    width: 44px;
+    height: 17px;
+  }
+
+  .main-page__nav {
+    display: none;
+  }
+}

@@ -1,0 +1,33 @@
+@import "normalize.scss";
+@import "variables.scss";
+@import "fonts.scss";
+
+@import "blocks/main-page.scss";
+@import "blocks/main-menu.scss";
+@import "blocks/hero.scss";
+@import "blocks/travel-places.scss";
+@import "blocks/country-cards.scss";
+@import "blocks/country-card.scss";
+@import "blocks/offers.scss";
+@import "blocks/travel-offers.scss";
+@import "blocks/feedback.scss";
+@import "blocks/footer.scss";
+@import "blocks/popup-buy-tour.scss";
+@import "blocks/popup-succes.scss";
+
+.button-main {
+  &:hover {
+    background-color: #f17d4b;
+  }
+  &:active {
+    background-color: #f17d4b;
+  }
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}

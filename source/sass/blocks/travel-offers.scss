@@ -1,0 +1,320 @@
+.travel-offers__content {
+  max-width: 1170px;
+  margin: 239px auto 0;
+  display: flex;
+}
+
+.travel-offers__cards {
+  display: flex;
+  gap: 33px;
+}
+
+.travel-offers__card {
+  position: relative;
+  box-sizing: border-box;
+  max-width: 370px;
+  flex-direction: column;
+  align-items: center;
+  padding: 44px 30px 90px 30px;
+  -moz-box-shadow: 0 0 0 1px rgba(44, 46, 63, 0.3);
+  -webkit-box-shadow: 0 0 0 1px rgba(44, 46, 63, 0.3);
+  box-shadow: 0 0 0 1px rgba(44, 46, 63, 0.3);
+  color: rgba(20, 21, 23, 0.7);
+  border-radius: 6px 6px 0 0;
+  &:hover {
+    box-shadow: 0 0 0 3px #fe7865;
+    & .travel-offers__card-title,
+    .travel-offers__card-cost {
+      color: #fe7865;
+    }
+    & .travel-offers__card-list-text {
+      &::before {
+        width: 14px;
+        height: 12px;
+        content: "";
+        position: absolute;
+        background-image: url("../img/path-black.svg");
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+    }
+  }
+}
+
+.travel-offers__card-header {
+  display: flex;
+}
+
+.travel-offers__card-title,
+.travel-offers__card-cost {
+  margin-top: 0;
+  margin-bottom: 22px;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 30px;
+}
+
+.travel-offers__card-cost {
+  margin-left: auto;
+}
+
+.travel-offers__card-text {
+  font-size: 16px;
+  line-height: 24px;
+  position: relative;
+  &::after {
+    content: "";
+    position: absolute;
+    width: 310px;
+    height: 1px;
+    background: #fe7865;
+    opacity: 0.5;
+    bottom: -28px;
+    left: 0;
+  }
+}
+
+.travel-offers__card-list {
+  margin-top: 63px;
+  margin-bottom: 55px;
+  padding-left: 30px;
+  list-style-type: none;
+}
+
+.travel-offers__card-list-text {
+  margin-bottom: 16px;
+  line-height: 30px;
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: -26px;
+    width: 14px;
+    height: 12px;
+    background-image: url("../img/path.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+
+.travel-offers__card-button {
+  position: absolute;
+  bottom: 26px;
+  width: 310px;
+  height: 75px;
+  display: block;
+  background-color: #fe7865;
+  text-decoration: none;
+  color: #ffffff;
+  text-align: center;
+  line-height: 74px;
+  letter-spacing: 1px;
+}
+
+.travel-offers__info {
+  box-sizing: border-box;
+  max-width: 375px;
+  padding: 60px 0px 40px 107px;
+}
+
+.travel-offers__info-title {
+  margin-bottom: 50px;
+  font-weight: 600;
+  font-size: 55px;
+  line-height: 90px;
+  color: #2c2e3f;
+}
+
+.travel-offers__info-text {
+  line-height: 26px;
+  color: rgba(44, 46, 63, 0.7);
+}
+
+.travel-offers__contacts-title {
+  margin-top: 35px;
+  margin-left: 50px;
+  margin-bottom: 15px;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 34px;
+  color: #141517;
+}
+
+.travel-offers__contacts-phone {
+  display: flex;
+  align-items: center;
+
+  text-decoration: none;
+  font-size: 20px;
+  line-height: 32px;
+  color: #000000;
+}
+
+.travel-offers__contacts-phone-pic {
+  margin-right: 15px;
+}
+
+@media (max-width: 1250px) {
+  .travel-offers__content {
+    max-width: 985px;
+  }
+
+  .travel-offers__card {
+    min-width: 248px;
+  }
+
+  .travel-offers__card-header {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .travel-offers__card-title,
+  .travel-offers__card-cost {
+    font-size: 24px;
+    line-height: 34px;
+  }
+
+  .travel-offers__card-cost {
+    margin-left: 0;
+  }
+
+  .travel-offers__card-text {
+    text-align: center;
+    &::after {
+      content: "";
+      width: 100%;
+    }
+  }
+
+  .travel-offers__card-button {
+    max-width: 100%;
+    bottom: 0;
+    left: 0;
+  }
+
+  .travel-offers__info {
+    padding-left: 50px;
+  }
+}
+
+@media (max-width: 1023px) {
+  .travel-offers__content {
+    flex-direction: column-reverse;
+    margin-top: 0;
+  }
+
+  .travel-offers__info {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-left: 0;
+    padding-bottom: 30px;
+  }
+
+  .travel-offers__info-title {
+    margin-bottom: 0px;
+    font-size: 30px;
+  }
+
+  .travel-offers__info-text {
+    max-width: 95%;
+    margin: auto;
+  }
+
+  .travel-offers__contacts-title {
+    margin-top: 35px;
+    margin-right: 50px;
+    margin-bottom: 10px;
+    font-size: 18px;
+  }
+
+  .travel-offers__contacts-phone {
+    margin: auto;
+    padding-right: 50px;
+    font-size: 18px;
+    color: #fe7865;
+    line-height: 32px;
+  }
+
+  .travel-offers__cards {
+    width: 82%;
+    margin: auto;
+    justify-content: center;
+    gap: 50px;
+  }
+
+  .travel-offers__card {
+    max-width: 288px;
+    margin-right: 0;
+    padding: 28px 20px 30px 20px;
+  }
+
+  .travel-offers__card-header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .travel-offers__card-title {
+    margin-bottom: 10px;
+  }
+
+  .travel-offers__card-cost {
+    margin-bottom: 0;
+  }
+
+  .travel-offers__card-text {
+    margin-top: 11px;
+    &::after {
+      bottom: -10px;
+    }
+  }
+
+  .travel-offers__card-list {
+    margin-top: 32px;
+  }
+
+  .travel-offers__card-list-text {
+    margin-bottom: 9px;
+    line-height: 32px;
+  }
+
+  .travel-offers__card-button {
+    height: 50px;
+    line-height: 45px;
+    font-weight: 500;
+    font-size: 10px;
+    letter-spacing: 3px;
+  }
+}
+
+@media (max-width: 767px) {
+  .travel-offers__cards {
+    margin: auto;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .travel-offers__info-title {
+    font-size: 24px;
+  }
+
+  .travel-offers__info-text {
+    max-width: 90%;
+  }
+
+  .travel-offers__contacts-title {
+    margin-top: 21px;
+  }
+
+  .travel-offers__cards {
+    margin-top: 11px;
+    gap: 30px;
+  }
+
+  .travel-offers__card {
+    min-width: 287px;
+    padding-bottom: 23px;
+  }
+}
